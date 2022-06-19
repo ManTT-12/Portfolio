@@ -1,0 +1,264 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root {
+    --active-link-color: blue;
+}
+
+/* header */
+header {
+    width: 100%;
+    position: relative;
+    height: 4rem;
+    z-index: 1;
+    background-color: white;
+    box-shadow: 0 2px 0 0 lightgoldenrodyellow;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10rem;
+    background-color: white;
+    box-shadow: 0 2px 0 0 lightgoldenrodyellow;
+}
+
+nav .nav_logo {
+    font-size: 20px;
+    color: slateblue;
+    font-family: fantasy;
+    text-decoration: none;
+}
+
+.nav_menu ul {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.nav_menu ul li {
+    padding: 10px;
+    margin: 0 4px;
+}
+
+.nav_menu a {
+    font-size: 15px;
+    color: black;
+    text-decoration: none;
+}
+
+/* home */
+main {
+    padding: 10px;
+}
+
+.home {
+    max-width: 964px;
+    height: 90vh;
+    padding: 6rem 0 2rem;
+    display: grid;
+    grid-template-columns: max-content 1fr 1fr;
+    column-gap: 2rem;
+}
+
+.home_social {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.home_img {
+    order: 1;
+    justify-self: center;
+}
+
+/* img */
+.home_img img,
+.about_content .about_img img {
+    height: 400px;
+    object-fit: contain;
+}
+
+.home_details {
+    grid-column: initial;
+}
+
+.home_social .fa-brands {
+    font-size: 25px;
+}
+
+.home_social .fa-facebook {
+    color: blue
+}
+
+.home_social .fa-twitter {
+    color: rgba(83, 245, 191, 0.842)
+}
+
+/* about */
+.about {
+    max-width: 964px;
+    height: calc(100% - 100vh);
+    padding: 2rem 0 2rem;
+}
+
+.about .about_header,
+.skills .skils_header,
+.contactme_header {
+    width: 100%;
+    text-align: center;
+}
+
+.about_content {
+    padding: 2rem 4px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1rem;
+    background-color: lavender;
+}
+
+.about_content .about_details {
+    padding: 4px;
+}
+
+.about_details p {
+    padding: 15px;
+    font-size: 18px;
+}
+
+.about_details .card_list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.about_details .card_list .card {
+    border: none;
+    text-align: center;
+    background-color: lavender;
+}
+
+.about_details .btns button {
+    width: 50%;
+    padding: 10px 5px;
+    background-color: lightskyblue;
+    color: white;
+    border: 1px solid skyblue;
+    border-radius: 20px;
+}
+
+/* skill */
+.skills {
+    max-width: 964px;
+    height: calc(100% - 100vh);
+    padding: 2rem 0 2rem;
+}
+
+.skills_list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem 2rem;
+    text-align: center;
+    padding: 2rem;
+}
+
+.skills_list img {
+    width: 120px;
+    object-fit: contain;
+}
+
+/* contact me */
+.contactme {
+    width: 964px;
+    height: calc(100% - 120vh);
+    padding: 2rem 0 2rem;
+}
+
+.contactme_content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 8px;
+    column-gap: 2rem;
+}
+
+.contactme_info {
+    border-radius: 20px;
+    background-color: wheat;
+    padding: 5px;
+}
+
+.contactme_info .info_phone,
+.info_mail,
+.info_address {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    column-gap: 2rem;
+    margin: 4px;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.contactme_content .contactme_info .bx,
+.contactme_info .fa-regular {
+    font-size: 45px;
+    color: indianred;
+}
+
+.contactme_content form {
+    padding: 10px;
+    outline: none;
+}
+
+.contactme_form label {
+    padding: 2px;
+    padding-left: 8px;
+}
+
+.contactme_form input {
+    width: 100%;
+    border: 1px solid lightgray;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.contactme_content form:hover {
+    border: 1px solid lightgray;
+    transform: translateY(-8px);
+    box-shadow: 3px 3px 3px 3px lightgray;
+    border-radius: 20px;
+}
+
+.contactme_form .btn {
+    padding: 12px 0;
+}
+
+.contactme_form button {
+    border: 1px solid white;
+    color: white;
+    border-radius: 20px;
+    background-color: blue;
+    width: 150px;
+    height: 35px;
+}
+
+.contactme_form i {
+    margin-left: 4px;
+}
+
+@media screen and (min-width: 768px) {
+    main {
+        margin: 0 10rem;
+    }
+}
