@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- boxicon -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/0481584cd8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/css/portfolio.css">
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="#" class="nav_logo">TangThucMan</a>
+            <div class="nav_menu" id="nav-menu">
+                <ul class="nav_list">
+                    <li class="nav_item"><a href="#home" class="nav_link active-link">Home</a></li>
+                    <li class="nav_item"><a href="#about" class="nav_link">About</a></li>
+                    <li class="nav_item"><a href="#skills" class="nav_link">Skills</a></li>
+                    <!-- <li class="nav_item"><a href="" class="nav_link">Services</a></li> -->
+                    <li class="nav_item"><a href="" class="nav_link">Portfolio</a></li>
+                    <li class="nav_item"><a href="#contactme" class="nav_link">Contact me</a></li>
+                    <li class="nav_item"><a href="#project" class="nav_link">Project</a></li>
+                    <!-- <li class="nav_item"><a href="" class="nav_link"><i class="fa-regular fa-moon"></i></a></li> -->
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="main-content">
+        <section class="home section" id="home">
+            <div class="home_social">
+                <a href="https://www.linkedin.com/in/tang-man-a94a10224/"><i class="fa-brands fa-linkedin-in"></i></a>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-github"></i>
+            </div>
+            <div class="home_img"><img
+                    src="./img/Hoạ sĩ minh hoạ nổi tiếng MXH Tamypu_ '30 tuổi, bỏ làm đi học thì có sao_'.jfif" alt="">
+            </div>
+            <div class="home_details">
+                <h1 class="title">Hi, I'm Mẫn</h1>
+                <h3 class="subtitle">Frontend Developer</h3>
+                <p class="description"></p>
+            </div>
+        </section>
+        <section class="about section" id="about">
+            <div class="about_header">
+                <h1 class="about_header title">About me</h1>
+                <span class="about_header subtitle">My introduction</span>
+            </div>
+            <div class="about_content">
+                <div class="about_img"><img
+                        src="./img/Hoạ sĩ minh hoạ nổi tiếng MXH Tamypu_ '30 tuổi, bỏ làm đi học thì có sao_'.jfif"
+                        alt=""></div>
+                <div class="about_details">
+                    <p>Web deveoper, working in web technologies and UI/UX design, delivering quality work.</p>
+                    <div class="about_details card_list">
+                        <div class="card">
+                            <h4>03+</h4>
+                            <p>Years experience</p>
+                        </div>
+                        <div class="card">
+                            <h4>03+</h4>
+                            <p>Completed project</p>
+                        </div>
+                        <div class="card"></div>
+                    </div>
+                    <a download="#" class="about_details btns">
+                        <button>Download CV <i class="fa-solid fa-download"></i></button>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="skills section" id="skills">
+            <div class="skills_header">
+                <h1 class="skils_header title">Skills</h1>
+            </div>
+            <div class="skills_list">
+                <a href="">
+                    <img src="./assets/img/1200px-HTML5_logo_resized.svg.png" alt="HTML5">
+                    <div class="skills name">HTML</div>
+                </a>
+                <a href="">
+                    <img src="./assets/img/CSS3_logo_and_wordmark.svg.png" alt="CSS3">
+                    <div class="skills name">CSS</div>
+                </a>
+                <a href="">
+                    <img src="./assets/img/javascript_logo.png" alt="JS">
+                    <div class="skills name">JS</div>
+                </a>
+            </div>
+        </section>
+        <!-- <section class="services section"></section> -->
+        <section class="portfolio section" id="portfolio"></section>
+        <section class="contactme section" id="contactme">
+            <div class="contactme_header">
+                <h1 class="contactme_header title">Contact Me</h1>
+                <span class="contactme_header subtitle"></span>
+            </div>
+            <div class="contactme_content">
+                <div class="contactme_info">
+                    <div class="info_phone"><i class='bx bx-phone'></i>
+                        <span class="phone">0765818773</span>
+                    </div>
+                    <div class="info_mail"><i class='bx bx-envelope'></i>
+                        <span class="email">tangthucman312@gmail.com</span>
+                    </div>
+                    <div class="info_address"><i class="fa-regular fa-map"></i>
+                        <span class="address">307/22 Vĩnh Viễn Phường 5, Quận 10, TPHCM</span>
+                    </div>
+                </div>
+                <form action="" class="contactme_form">
+                    <div>
+                        <div class="form-group"><label for="contactme_name">Name:</label>
+                            <input type="text" name="" id="contactme_name" class="contactme_name"
+                                placeholder="Enter name...">
+                        </div>
+                        <div class="form-group"><label for="contactme_email">Email:</label>
+                            <input type="email" name="" id="contactme_email" class="contactme_email"
+                                placeholder="Enter email...">
+                        </div>
+                        <div class="form-group"><label for="contactme_project">Project name:</label>
+                            <input type="text" name="" id="contactme_project" class="contactme_project"
+                                placeholder="Enter project name">
+                        </div>
+                        <div class="form-group"><label for="contactme_message">Message:</label><input type="text"
+                                name="" id="contactme_message" class="contactme_message" placeholder="Enter message...">
+                        </div>
+                    </div>
+                    <div class="contactme_form btn">
+                        <button class="contactme_form btn_send_message">Send Message<i
+                                class="fa-regular fa-paper-plane"></i></button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+    </footer>
+    <script src="./assets/js/portfolio.js"></script>
+</body>
+
+</html>
